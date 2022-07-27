@@ -3,6 +3,8 @@ coverage {
 }
 
 dependencies {
+    implementation(Dependencies.javaPersistenceApi)
+
     implementation(Modules.hibernate)
     implementation(Dependencies.hibernate)
     implementation(Dependencies.logback)

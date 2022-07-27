@@ -2,7 +2,7 @@ package com.linecorp.kotlinjdsl.query.clause.hint
 
 import org.eclipse.persistence.queries.DatabaseQuery
 import org.slf4j.LoggerFactory
-import javax.persistence.Query
+import jakarta.persistence.Query
 
 data class EclipselinkSqlQueryHintClause(
     private val queryHints: List<String>

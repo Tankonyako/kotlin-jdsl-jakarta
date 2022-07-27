@@ -12,7 +12,7 @@ import io.mockk.mockk
 import io.mockk.verify
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 @ExtendWith(MockKExtension::class)
 internal class SubqueryExpressionSpecTest : WithKotlinJdslAssertions {

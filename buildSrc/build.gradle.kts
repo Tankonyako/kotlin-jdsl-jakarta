@@ -5,11 +5,14 @@ plugins {
     `java-gradle-plugin`
     `maven-publish`
     signing
+
+    idea
 }
 
 repositories {
     mavenCentral()
     gradlePluginPortal()
+    mavenLocal()
 }
 
 dependencies {

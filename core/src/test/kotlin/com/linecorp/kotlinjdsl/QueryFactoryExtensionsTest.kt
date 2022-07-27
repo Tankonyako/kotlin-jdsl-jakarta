@@ -15,8 +15,8 @@ import io.mockk.verify
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import java.util.stream.Stream
-import javax.persistence.Query
-import javax.persistence.TypedQuery
+import jakarta.persistence.Query
+import jakarta.persistence.TypedQuery
 import kotlin.streams.toList
 
 @ExtendWith(MockKExtension::class)

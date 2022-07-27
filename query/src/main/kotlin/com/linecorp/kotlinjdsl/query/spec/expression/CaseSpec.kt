@@ -2,7 +2,7 @@ package com.linecorp.kotlinjdsl.query.spec.expression
 
 import com.linecorp.kotlinjdsl.query.spec.Froms
 import com.linecorp.kotlinjdsl.query.spec.predicate.PredicateSpec
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 data class CaseSpec<T>(
     private val whens: List<WhenSpec<out T>>,

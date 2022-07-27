@@ -1,6 +1,6 @@
 package com.linecorp.kotlinjdsl.query.clause.limit
 
-import javax.persistence.Query
+import jakarta.persistence.Query
 
 data class LimitClause<Q : Query>(
     private val offset: Int?,

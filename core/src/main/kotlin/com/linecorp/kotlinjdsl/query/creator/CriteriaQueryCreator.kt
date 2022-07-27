@@ -3,8 +3,8 @@ package com.linecorp.kotlinjdsl.query.creator
 import com.linecorp.kotlinjdsl.query.CriteriaDeleteQuerySpec
 import com.linecorp.kotlinjdsl.query.CriteriaQuerySpec
 import com.linecorp.kotlinjdsl.query.CriteriaUpdateQuerySpec
-import javax.persistence.Query
-import javax.persistence.TypedQuery
+import jakarta.persistence.Query
+import jakarta.persistence.TypedQuery
 
 interface CriteriaQueryCreator {
     fun <T> createQuery(spec: CriteriaQuerySpec<T, TypedQuery<T>>): TypedQuery<T>

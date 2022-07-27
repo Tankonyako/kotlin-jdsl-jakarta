@@ -7,8 +7,8 @@ import com.linecorp.kotlinjdsl.listQuery
 import com.linecorp.kotlinjdsl.query.creator.CriteriaQueryCreatorImpl
 import com.linecorp.kotlinjdsl.query.creator.SubqueryCreatorImpl
 import com.linecorp.kotlinjdsl.querydsl.expression.col
-import javax.persistence.EntityManager
-import javax.persistence.Persistence
+import jakarta.persistence.EntityManager
+import jakarta.persistence.Persistence
 
 private val entityManagerFactory = Persistence.createEntityManagerFactory("example")
 

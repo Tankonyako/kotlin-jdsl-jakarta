@@ -1,6 +1,6 @@
 package com.linecorp.kotlinjdsl.querydsl.from
 
-import javax.persistence.criteria.JoinType
+import jakarta.persistence.criteria.JoinType
 import kotlin.reflect.KProperty1
 
 inline fun <reified T : Any, reified R : Any> FetchDsl.fetch(

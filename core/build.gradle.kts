@@ -1,6 +1,8 @@
 apply<PublishPlugin>()
 
 dependencies {
+    implementation(Dependencies.javaPersistenceApi)
+
     api(Modules.query)
 
     compileOnly(Dependencies.javaPersistenceApi)

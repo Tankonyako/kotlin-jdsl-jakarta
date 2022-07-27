@@ -3,9 +3,9 @@ package com.linecorp.kotlinjdsl.query.creator
 import com.linecorp.kotlinjdsl.query.CriteriaDeleteQuerySpec
 import com.linecorp.kotlinjdsl.query.CriteriaQuerySpec
 import com.linecorp.kotlinjdsl.query.CriteriaUpdateQuerySpec
-import javax.persistence.EntityManager
-import javax.persistence.Query
-import javax.persistence.TypedQuery
+import jakarta.persistence.EntityManager
+import jakarta.persistence.Query
+import jakarta.persistence.TypedQuery
 
 class CriteriaQueryCreatorImpl(
     private val em: EntityManager,

@@ -1,7 +1,7 @@
 package com.linecorp.kotlinjdsl.query.clause.hint
 
 import org.slf4j.LoggerFactory
-import javax.persistence.Query
+import jakarta.persistence.Query
 
 @Suppress("UNCHECKED_CAST")
 inline fun <reified T> emptySqlHintClause(): SqlQueryHintClause<T> = EmptySqlQueryHintClause as SqlQueryHintClause<T>

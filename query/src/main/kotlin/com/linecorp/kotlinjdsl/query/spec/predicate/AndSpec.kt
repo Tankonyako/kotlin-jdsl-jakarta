@@ -1,7 +1,7 @@
 package com.linecorp.kotlinjdsl.query.spec.predicate
 
 import com.linecorp.kotlinjdsl.query.spec.Froms
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 data class AndSpec(
     private val predicates: List<PredicateSpec?>,

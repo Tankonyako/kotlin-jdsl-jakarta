@@ -1,10 +1,10 @@
 package com.linecorp.kotlinjdsl.query.clause.where
 
 import com.linecorp.kotlinjdsl.query.spec.Froms
-import javax.persistence.criteria.CriteriaBuilder
-import javax.persistence.criteria.CriteriaDelete
-import javax.persistence.criteria.CriteriaQuery
-import javax.persistence.criteria.CriteriaUpdate
+import jakarta.persistence.criteria.CriteriaBuilder
+import jakarta.persistence.criteria.CriteriaDelete
+import jakarta.persistence.criteria.CriteriaQuery
+import jakarta.persistence.criteria.CriteriaUpdate
 
 /**
  * Internal Only

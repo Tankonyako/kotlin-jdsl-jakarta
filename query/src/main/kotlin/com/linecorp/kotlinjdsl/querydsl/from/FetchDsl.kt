@@ -1,7 +1,7 @@
 package com.linecorp.kotlinjdsl.querydsl.from
 
 import com.linecorp.kotlinjdsl.query.spec.expression.EntitySpec
-import javax.persistence.criteria.JoinType
+import jakarta.persistence.criteria.JoinType
 import kotlin.reflect.KClass
 
 interface FetchDsl {

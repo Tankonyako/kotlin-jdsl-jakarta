@@ -1,7 +1,7 @@
 package com.linecorp.kotlinjdsl.query.spec.expression
 
 import com.linecorp.kotlinjdsl.query.spec.Froms
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 data class SumSpec<T : Number?>(
     private val expression: ExpressionSpec<T>

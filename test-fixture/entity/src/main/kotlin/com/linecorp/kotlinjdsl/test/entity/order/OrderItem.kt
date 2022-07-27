@@ -1,7 +1,7 @@
 package com.linecorp.kotlinjdsl.test.entity.order
 
 import java.math.BigDecimal
-import javax.persistence.*
+import jakarta.persistence.*
 import kotlin.random.Random
 
 @Entity

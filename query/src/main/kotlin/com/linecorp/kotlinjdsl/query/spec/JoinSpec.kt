@@ -2,7 +2,7 @@ package com.linecorp.kotlinjdsl.query.spec
 
 import com.linecorp.kotlinjdsl.query.spec.expression.ColumnSpec
 import com.linecorp.kotlinjdsl.query.spec.expression.EntitySpec
-import javax.persistence.criteria.JoinType
+import jakarta.persistence.criteria.JoinType
 
 sealed interface JoinSpec<T> {
     val entity: EntitySpec<T>

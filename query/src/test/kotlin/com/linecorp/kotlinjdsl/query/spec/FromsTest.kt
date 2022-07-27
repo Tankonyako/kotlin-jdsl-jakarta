@@ -6,9 +6,9 @@ import io.mockk.junit5.MockKExtension
 import io.mockk.mockk
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import javax.persistence.criteria.From
-import javax.persistence.criteria.Path
-import javax.persistence.criteria.Root
+import jakarta.persistence.criteria.From
+import jakarta.persistence.criteria.Path
+import jakarta.persistence.criteria.Root
 
 @ExtendWith(MockKExtension::class)
 internal class FromsTest : WithKotlinJdslAssertions {

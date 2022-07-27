@@ -2,7 +2,7 @@ package com.linecorp.kotlinjdsl.query.spec.predicate
 
 import com.linecorp.kotlinjdsl.query.spec.Froms
 import com.linecorp.kotlinjdsl.query.spec.expression.ExpressionSpec
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 data class GreaterThanValueSpec<T, R>(
     private val left: ExpressionSpec<T>,

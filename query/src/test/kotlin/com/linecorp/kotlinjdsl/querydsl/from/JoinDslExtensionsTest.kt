@@ -8,7 +8,7 @@ import io.mockk.justRun
 import io.mockk.verify
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import javax.persistence.criteria.JoinType
+import jakarta.persistence.criteria.JoinType
 
 @ExtendWith(MockKExtension::class)
 internal class JoinDslExtensionsTest : WithKotlinJdslAssertions {

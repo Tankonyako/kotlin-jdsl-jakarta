@@ -4,7 +4,7 @@ import com.linecorp.kotlinjdsl.query.clause.hint.JpaQueryHintClauseImpl
 import com.linecorp.kotlinjdsl.querydsl.QueryDslImpl
 import com.linecorp.kotlinjdsl.test.WithKotlinJdslAssertions
 import org.junit.jupiter.api.Test
-import javax.persistence.Query
+import jakarta.persistence.Query
 
 internal class QueryDslImplHintTest : WithKotlinJdslAssertions {
     @Test

@@ -11,10 +11,10 @@ import io.mockk.mockk
 import io.mockk.verify
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import javax.persistence.criteria.CompoundSelection
-import javax.persistence.criteria.CriteriaBuilder
-import javax.persistence.criteria.CriteriaQuery
-import javax.persistence.criteria.Expression
+import jakarta.persistence.criteria.CompoundSelection
+import jakarta.persistence.criteria.CriteriaBuilder
+import jakarta.persistence.criteria.CriteriaQuery
+import jakarta.persistence.criteria.Expression
 
 @ExtendWith(MockKExtension::class)
 internal class MultiSelectClauseTest : WithKotlinJdslAssertions {

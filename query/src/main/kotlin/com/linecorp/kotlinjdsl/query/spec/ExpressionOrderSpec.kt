@@ -1,9 +1,9 @@
 package com.linecorp.kotlinjdsl.query.spec
 
 import com.linecorp.kotlinjdsl.query.spec.expression.ExpressionSpec
-import javax.persistence.criteria.CriteriaBuilder
-import javax.persistence.criteria.CriteriaQuery
-import javax.persistence.criteria.Order
+import jakarta.persistence.criteria.CriteriaBuilder
+import jakarta.persistence.criteria.CriteriaQuery
+import jakarta.persistence.criteria.Order
 
 data class ExpressionOrderSpec(
     private val expression: ExpressionSpec<*>,

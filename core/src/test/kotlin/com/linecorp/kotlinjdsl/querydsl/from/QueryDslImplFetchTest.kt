@@ -6,7 +6,7 @@ import com.linecorp.kotlinjdsl.query.spec.expression.EntitySpec
 import com.linecorp.kotlinjdsl.querydsl.QueryDslImpl
 import com.linecorp.kotlinjdsl.test.WithKotlinJdslAssertions
 import org.junit.jupiter.api.Test
-import javax.persistence.criteria.JoinType
+import jakarta.persistence.criteria.JoinType
 
 internal class QueryDslImplFetchTest : WithKotlinJdslAssertions {
     @Test

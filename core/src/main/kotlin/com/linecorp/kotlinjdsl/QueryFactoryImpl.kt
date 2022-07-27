@@ -4,8 +4,8 @@ import com.linecorp.kotlinjdsl.query.creator.CriteriaQueryCreator
 import com.linecorp.kotlinjdsl.query.creator.SubqueryCreator
 import com.linecorp.kotlinjdsl.query.spec.expression.SubqueryExpressionSpec
 import com.linecorp.kotlinjdsl.querydsl.*
-import javax.persistence.Query
-import javax.persistence.TypedQuery
+import jakarta.persistence.Query
+import jakarta.persistence.TypedQuery
 import kotlin.reflect.KClass
 
 class QueryFactoryImpl(

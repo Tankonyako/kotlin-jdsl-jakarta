@@ -1,7 +1,7 @@
 package com.linecorp.kotlinjdsl.query.spec.expression
 
 import com.linecorp.kotlinjdsl.query.spec.Froms
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 data class CountSpec<T>(
     private val distinct: Boolean = false,

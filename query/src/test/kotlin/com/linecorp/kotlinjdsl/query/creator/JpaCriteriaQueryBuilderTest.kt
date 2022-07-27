@@ -22,10 +22,10 @@ import io.mockk.impl.annotations.MockK
 import io.mockk.junit5.MockKExtension
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import javax.persistence.EntityManager
-import javax.persistence.Query
-import javax.persistence.TypedQuery
-import javax.persistence.criteria.*
+import jakarta.persistence.EntityManager
+import jakarta.persistence.Query
+import jakarta.persistence.TypedQuery
+import jakarta.persistence.criteria.*
 
 @ExtendWith(MockKExtension::class)
 internal class JpaCriteriaQueryBuilderTest : WithKotlinJdslAssertions {

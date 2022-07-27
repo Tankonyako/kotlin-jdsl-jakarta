@@ -1,8 +1,8 @@
 package com.linecorp.kotlinjdsl.query.clause.where
 
 import com.linecorp.kotlinjdsl.query.spec.Froms
-import javax.persistence.criteria.CriteriaBuilder
-import javax.persistence.criteria.Subquery
+import jakarta.persistence.criteria.CriteriaBuilder
+import jakarta.persistence.criteria.Subquery
 
 /**
  * Internal Only

@@ -2,9 +2,9 @@ package com.linecorp.kotlinjdsl.query.creator
 
 import com.linecorp.kotlinjdsl.query.SubquerySpec
 import com.linecorp.kotlinjdsl.query.spec.Froms
-import javax.persistence.criteria.CommonAbstractCriteria
-import javax.persistence.criteria.CriteriaBuilder
-import javax.persistence.criteria.Subquery
+import jakarta.persistence.criteria.CommonAbstractCriteria
+import jakarta.persistence.criteria.CriteriaBuilder
+import jakarta.persistence.criteria.Subquery
 
 /**
  * Internal Only

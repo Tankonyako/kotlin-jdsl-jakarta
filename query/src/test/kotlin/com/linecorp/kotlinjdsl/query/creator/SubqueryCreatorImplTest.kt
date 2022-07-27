@@ -14,7 +14,7 @@ import io.mockk.junit5.MockKExtension
 import org.assertj.core.api.WithAssertions
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 @ExtendWith(MockKExtension::class)
 internal class SubqueryCreatorImplTest : WithAssertions {

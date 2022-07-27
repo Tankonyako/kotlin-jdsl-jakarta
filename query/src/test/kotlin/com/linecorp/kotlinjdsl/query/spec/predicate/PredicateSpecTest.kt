@@ -3,7 +3,7 @@ package com.linecorp.kotlinjdsl.query.spec.predicate
 import com.linecorp.kotlinjdsl.query.spec.Froms
 import com.linecorp.kotlinjdsl.test.WithKotlinJdslAssertions
 import org.junit.jupiter.api.Test
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 internal class PredicateSpecTest : WithKotlinJdslAssertions {
     private val predicateSpec1: PredicateSpec = object : PredicateSpec {

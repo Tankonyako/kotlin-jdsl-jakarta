@@ -33,7 +33,7 @@ import com.linecorp.kotlinjdsl.query.spec.predicate.AndSpec
 import com.linecorp.kotlinjdsl.query.spec.predicate.PredicateSpec
 import com.linecorp.kotlinjdsl.querydsl.from.Relation
 import com.linecorp.kotlinjdsl.querydsl.hint.SqlReactiveQueryHintClauseProvider
-import javax.persistence.criteria.JoinType
+import jakarta.persistence.criteria.JoinType
 
 /**
  * Internal DSL Implementation

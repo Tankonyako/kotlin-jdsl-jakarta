@@ -1,7 +1,7 @@
 package com.linecorp.kotlinjdsl.test.entity.order
 
 import com.linecorp.kotlinjdsl.test.entity.Address
-import javax.persistence.*
+import jakarta.persistence.*
 
 @Entity
 @Table(name = "test_order_address")

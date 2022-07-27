@@ -5,8 +5,8 @@ import com.linecorp.kotlinjdsl.querydsl.CriteriaDeleteQueryDsl
 import com.linecorp.kotlinjdsl.querydsl.CriteriaQueryDsl
 import com.linecorp.kotlinjdsl.querydsl.CriteriaUpdateQueryDsl
 import com.linecorp.kotlinjdsl.querydsl.SubqueryDsl
-import javax.persistence.Query
-import javax.persistence.TypedQuery
+import jakarta.persistence.Query
+import jakarta.persistence.TypedQuery
 import kotlin.reflect.KClass
 
 interface QueryFactory {

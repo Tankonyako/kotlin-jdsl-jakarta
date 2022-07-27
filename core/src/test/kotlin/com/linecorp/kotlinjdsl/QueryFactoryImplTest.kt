@@ -32,8 +32,8 @@ import io.mockk.mockk
 import io.mockk.verify
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
-import javax.persistence.Query
-import javax.persistence.TypedQuery
+import jakarta.persistence.Query
+import jakarta.persistence.TypedQuery
 
 @ExtendWith(MockKExtension::class)
 internal class QueryFactoryImplTest : WithKotlinJdslAssertions {

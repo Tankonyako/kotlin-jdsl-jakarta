@@ -1,7 +1,7 @@
 package com.linecorp.kotlinjdsl.query.clause.hint
 
 import org.slf4j.LoggerFactory
-import javax.persistence.Query
+import jakarta.persistence.Query
 
 data class HibernateSqlQueryHintClause(
     private val queryHints: List<String>

@@ -4,7 +4,7 @@ import com.linecorp.kotlinjdsl.query.clause.hint.EmptySqlQueryHintClause
 import com.linecorp.kotlinjdsl.query.clause.hint.SqlQueryHintClause
 import org.slf4j.LoggerFactory
 import java.util.*
-import javax.persistence.Query
+import jakarta.persistence.Query
 
 interface SqlQueryHintClauseFactoryProvider {
     fun factory(): (List<String>) -> SqlQueryHintClause<Query>

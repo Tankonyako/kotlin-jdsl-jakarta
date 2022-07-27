@@ -3,7 +3,7 @@ package com.linecorp.kotlinjdsl.query.spec.expression
 import com.linecorp.kotlinjdsl.query.SubquerySpec
 import com.linecorp.kotlinjdsl.query.creator.SubqueryCreator
 import com.linecorp.kotlinjdsl.query.spec.Froms
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 data class SubqueryExpressionSpec<T>(
     private val spec: SubquerySpec<T>,

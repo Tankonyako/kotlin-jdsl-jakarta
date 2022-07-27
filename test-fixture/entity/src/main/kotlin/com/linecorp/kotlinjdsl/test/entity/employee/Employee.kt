@@ -2,7 +2,7 @@ package com.linecorp.kotlinjdsl.test.entity.employee
 
 import java.math.BigDecimal
 import java.util.*
-import javax.persistence.*
+import jakarta.persistence.*
 
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @Entity

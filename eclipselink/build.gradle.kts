@@ -8,7 +8,6 @@ dependencies {
     compileOnly(Dependencies.slf4j)
 
     testImplementation(Modules.core)
-    testImplementation(Modules.testFixtureIntegration)
     testImplementation(Dependencies.eclipselink)
     testImplementation(Dependencies.javaPersistenceApi)
     testImplementation(Dependencies.h2)

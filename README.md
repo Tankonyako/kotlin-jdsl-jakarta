@@ -1,7 +1,4 @@
-# Kotlin JDSL
-<a href="https://codecov.io/gh/line/kotlin-jdsl">
-  <img src="https://codecov.io/gh/line/kotlin-jdsl/branch/main/graph/badge.svg?token=YWPDKYDARW"/>
-</a>
+# Kotlin JDSL (Jakarta)
 &nbsp;<a href="https://github.com/line/kotlin-jdsl/contributors"><img src="https://img.shields.io/github/contributors/line/kotlin-jdsl.svg" /></a>&nbsp;
 <a href="https://search.maven.org/search?q=g:com.linecorp.kotlin-jdsl%20AND%20a:kotlin-jdsl-core"><img src="https://img.shields.io/maven-central/v/com.linecorp.kotlin-jdsl/kotlin-jdsl-core.svg?label=version" /></a>&nbsp;
 <a href="https://github.com/line/kotlin-jdsl/commits"><img src="https://img.shields.io/github/release-date/line/kotlin-jdsl.svg?label=release" /></a>
@@ -9,34 +6,74 @@
 Kotlin JDSL is DSL for JPA Criteria API without generated metamodel and reflection. It helps you write a JPA query like
 writing an SQL statement.
 
+## Warning
+This is a temporary solution, and for those who just want a cool functional library bypassing Hibernate in Kotlin, orig. the library does not support Hibernate 6 and Jakarta, if your Hibernate version is less than version 6, checkout the [original repositories](https://github.com/line/kotlin-jdsl).
+
 ### Background
 
 There are several libraries in the easy way to use JPA. However, those libraries have to use APT. If you use APT, there is a problem that you have to compile again when the name or type of entity field is changed. So, in order not to use APT, we created this library using the KProperty created by the kotlin compiler.
 
 ## Quick start
-
-### Reactive
-If you are interested in JPA Reactive See [more](./reactive-core/README.md)
+### ⚠️ Download compiled JARs 
+Added support for Hibernate 6, Jakarta (JPA 3.0) and java 11 compiler target.
+Removed Spring, Hibernate Reactive because modules don't support Hibernate 6.
+1. Download here: <a href="https://github.com/Tankonyako/kotlin-jdsl-jakarta/releases">Release Page</a>
+2. Then create ./lib folder where `pom.xml` located and move jar's to there.
+3. Add code below to `pom.xml` or tou can google how add local libraries to gradle, or add in Project Settings (Intellij Idea))
 
 ### Hibernate
 
 Add Hibernate Kotlin JDSL and Hibernate to dependencies
 
-```kotlin
-dependencies {
-    implementation("com.linecorp.kotlin-jdsl:hibernate-kotlin-jdsl:x.y.z")
-    implementation("org.hibernate:hibernate-core:x.y.z")
-}
+```xml
+<dependency> <!-- JDSL CORE WITH JAKRATA -->
+    <groupId>com.linecorp.kotlin-jdsl</groupId>
+    <artifactId>kotlin-jdsl-core</artifactId>
+    <scope>system</scope>
+    <systemPath>${basedir}/lib/kotlin-jdsl-core-2.0.4.min-jakarta.jar</systemPath>
+    <version>2.0.4.min-jakarta</version>
+</dependency>
+<dependency> <!-- JDSL QUERY WITH JAKRATA -->
+    <groupId>com.linecorp.kotlin-jdsl</groupId>
+    <artifactId>kotlin-jdsl-query</artifactId>
+    <scope>system</scope>
+    <systemPath>${basedir}/lib/kotlin-jdsl-query-2.0.4.min-jakarta.jar</systemPath>
+    <version>2.0.4.min-jakarta</version>
+</dependency>
+<dependency> <!-- HIBERNATE JDSL WITH JAKRATA -->
+    <groupId>com.linecorp.kotlin-jdsl</groupId>
+    <artifactId>hibernate-kotlin-jdsl</artifactId>
+    <scope>system</scope>
+    <systemPath>${basedir}/lib/hibernate-kotlin-jdsl-2.0.4.min-jakarta.jar</systemPath>
+    <version>2.0.4.min-jakarta</version>
+</dependency>
 ```
 
 ### Eclipselink
 Add Eclipselink Kotlin JDSL and Eclipselink to dependencies
 
-```kotlin
-dependencies {
-    implementation("com.linecorp.kotlin-jdsl:eclipselink-kotlin-jdsl:x.y.z")
-    implementation("org.eclipse.persistence:org.eclipse.persistence.jpa:x.y.z")
-}
+```xml
+<dependency> <!-- JDSL CORE WITH JAKRATA -->
+    <groupId>com.linecorp.kotlin-jdsl</groupId>
+    <artifactId>kotlin-jdsl-core</artifactId>
+    <scope>system</scope>
+    <systemPath>${basedir}/lib/kotlin-jdsl-core-2.0.4.min-jakarta.jar</systemPath>
+    <version>2.0.4.min-jakarta</version>
+</dependency>
+<dependency> <!-- JDSL QUERY WITH JAKRATA -->
+    <groupId>com.linecorp.kotlin-jdsl</groupId>
+    <artifactId>kotlin-jdsl-query</artifactId>
+    <scope>system</scope>
+    <systemPath>${basedir}/lib/kotlin-jdsl-query-2.0.4.min-jakarta.jar</systemPath>
+    <version>2.0.4.min-jakarta</version>
+</dependency>
+<dependency> <!-- ECLIPSELINK JDSL WITH JAKRATA -->
+    <groupId>com.linecorp.kotlin-jdsl</groupId>
+    <artifactId>eclipselink-kotlin-jdsl</artifactId>
+    <scope>system</scope>
+    <systemPath>${basedir}/lib/eclipselink-kotlin-jdsl-2.0.4.min-jakarta</systemPath>
+    <version>2.0.4.min-jakarta</version>
+</dependency>
 ```
 
 Create QueryFactory using EntityManager
@@ -58,9 +95,8 @@ queryFactory.listQuery<Entity> {
 }
 ```
 
-### Spring Data
-If you use Spring Boot & Data Frameworks
-See [more](./spring/README.md)
+### Spring Data & Reactive
+Not supported due Hibernate 6 not supported with Spring & Reactive, use original JPA 2.0 [repo](https://github.com/line/kotlin-jdsl).
 
 ## Usage
 

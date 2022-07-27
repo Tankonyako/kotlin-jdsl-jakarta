@@ -1,6 +1,6 @@
 package com.linecorp.kotlinjdsl.test.entity.test
 
-import javax.persistence.*
+import jakarta.persistence.*
 
 @Entity
 @Table(name = "test_table")

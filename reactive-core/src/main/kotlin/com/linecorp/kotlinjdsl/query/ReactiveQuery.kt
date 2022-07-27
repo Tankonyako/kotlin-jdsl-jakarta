@@ -1,6 +1,6 @@
 package com.linecorp.kotlinjdsl.query
 
-import javax.persistence.Parameter
+import jakarta.persistence.Parameter
 import kotlin.reflect.KClass
 
 interface ReactiveQuery<R> {

@@ -5,8 +5,8 @@ import com.linecorp.kotlinjdsl.query.spec.Froms
 import com.linecorp.kotlinjdsl.query.spec.SimpleAssociatedJoinSpec
 import com.linecorp.kotlinjdsl.query.spec.expression.EntitySpec
 import java.util.*
-import javax.persistence.criteria.Path
-import javax.persistence.criteria.Root
+import jakarta.persistence.criteria.Path
+import jakarta.persistence.criteria.Root
 
 /**
  * Internal Only

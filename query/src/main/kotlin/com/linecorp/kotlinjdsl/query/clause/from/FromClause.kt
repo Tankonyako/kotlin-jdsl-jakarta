@@ -2,10 +2,10 @@ package com.linecorp.kotlinjdsl.query.clause.from
 
 import com.linecorp.kotlinjdsl.query.spec.Froms
 import com.linecorp.kotlinjdsl.query.spec.expression.EntitySpec
-import javax.persistence.criteria.AbstractQuery
-import javax.persistence.criteria.CriteriaBuilder
-import javax.persistence.criteria.CriteriaDelete
-import javax.persistence.criteria.CriteriaUpdate
+import jakarta.persistence.criteria.AbstractQuery
+import jakarta.persistence.criteria.CriteriaBuilder
+import jakarta.persistence.criteria.CriteriaDelete
+import jakarta.persistence.criteria.CriteriaUpdate
 
 /**
  * Internal Only

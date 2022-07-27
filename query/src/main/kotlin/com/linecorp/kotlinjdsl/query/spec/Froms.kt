@@ -1,8 +1,8 @@
 package com.linecorp.kotlinjdsl.query.spec
 
 import com.linecorp.kotlinjdsl.query.spec.expression.EntitySpec
-import javax.persistence.criteria.Path
-import javax.persistence.criteria.Root
+import jakarta.persistence.criteria.Path
+import jakarta.persistence.criteria.Root
 
 class Froms internal constructor(
     val root: Root<*>,

@@ -19,7 +19,7 @@ import com.linecorp.kotlinjdsl.test.entity.employee.Project
 import io.mockk.mockk
 import org.junit.jupiter.api.Test
 import java.math.BigDecimal
-import javax.persistence.criteria.JoinType
+import jakarta.persistence.criteria.JoinType
 
 internal class QueryDslImplJoinTest : WithKotlinJdslAssertions {
     @Test

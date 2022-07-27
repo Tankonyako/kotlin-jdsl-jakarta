@@ -1,6 +1,6 @@
 package com.linecorp.kotlinjdsl.test.entity.order
 
-import javax.persistence.*
+import jakarta.persistence.*
 import kotlin.random.Random
 
 @Entity

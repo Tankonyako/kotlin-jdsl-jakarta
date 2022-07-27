@@ -1,6 +1,6 @@
 package com.linecorp.kotlinjdsl.hibernate.example.entity
 
-import javax.persistence.*
+import jakarta.persistence.*
 
 @Entity
 @Table(name = "book")

@@ -5,7 +5,7 @@ package com.linecorp.kotlinjdsl.query.clause.from
 import com.linecorp.kotlinjdsl.query.spec.*
 import com.linecorp.kotlinjdsl.query.spec.expression.EntitySpec
 import java.util.*
-import javax.persistence.criteria.*
+import jakarta.persistence.criteria.*
 
 // In the case of Treat, Type should be clearly treated as a parent/child relationship,
 // but it was used because it needed a parent/child relationship that can be cast forcibly due to the current structure that receives JoinSpec as *.

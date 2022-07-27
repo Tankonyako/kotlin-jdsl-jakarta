@@ -1,6 +1,6 @@
 package com.linecorp.kotlinjdsl.eclipselink.example.entity
 
-import javax.persistence.*
+import jakarta.persistence.*
 
 @Entity
 @Table(name = "book")
